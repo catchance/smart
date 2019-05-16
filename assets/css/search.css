@@ -1,0 +1,314 @@
+#searchBox {
+    position: relative;
+    max-width: 300px;
+    height: 30px;
+    margin: 16px auto;
+    width: 30%;
+    margin-left: -40px;
+}
+
+#searchBox #searchBoxInput {
+    position: absolute;
+    /*width: 100%;*/
+    width: 230px;
+    padding: 0 35px 0 15px;
+    top: 0;
+    /*left: 0;*/
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    outline: 0;
+    font-size: 15px;
+    color: #707070;
+    background-color:#f6f6f6;
+    border: solid 1px #c9c9c9;
+    box-sizing: border-box;
+}
+
+#searchBox #searchBoxInput::placeholder {
+    color: #c9c9c9;
+}
+
+#searchBox #searchBoxIcon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 5px;
+    right: 10px;
+}
+
+#searchResults {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    max-width: 600px;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 600px;
+    margin: 0 auto;
+    top: 55px;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    background-color:#f6f6f6;
+    border: solid 1px #c9c9c9;
+    border-radius: 5px;
+    text-align: left;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+/* css隐藏滚动条 */
+/* chrome 和Safari */
+#searchResults::-webkit-scrollbar { width: 0 !important }
+/* IE 10+ */
+#searchResults { -ms-overflow-style: none; }
+/*Firefox */
+#searchResults { overflow: -moz-scrollbars-none; }
+
+#searchResults .searchResultPage {
+    padding: 20px
+}
+
+#searchResults .searchResultTitle {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#searchResults .searchResultKeywords {
+    color: #2d96bd;
+}
+
+#searchResults .searchResultKeywords i {
+    margin: 5px;
+}
+
+#searchResults .searchResultBody {
+    font-size: 14px;
+}
+
+#searchResults mark {
+    background-color: #dddfdf;
+}
+
+/* **************************************** slide */
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.4;
+    width: 0;
+    z-index: 1040;
+    box-shadow: inset 0 2px 6px #000;
+    background: #222;
+    -webkit-transform: translateZ(0);
+}
+.sidebar a {
+    color: #999;
+    border-bottom-color: #555;
+}
+.sidebar a:hover {
+    color: #eee;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .sidebar {
+        display: none !important;
+    }
+}
+@media (max-width: 767px) {
+    .sidebar {
+        display: none !important;
+    }
+}
+.sidebar-inner {
+    position: relative;
+    padding: 20px 10px;
+    color: #999;
+    text-align: center;
+}
+.sidebar-toggle {
+    position: fixed;
+    right: 30px;
+    bottom: 58px;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background: #222;
+    line-height: 0;
+    z-index: 1050;
+    cursor: pointer;
+    -webkit-transform: translateZ(0);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .sidebar-toggle {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .sidebar-toggle {
+        display: none;
+    }
+}
+.sidebar-toggle-line {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 2px;
+    width: 100%;
+    /*background: #fff;*/
+    background: #87daff;
+    margin-top: 3px;
+}
+.sidebar-toggle-line:first-child {
+    margin-top: 0;
+}
+
+.sidebar-nav {
+    margin: 0 0 20px;
+    padding-left: 0;
+}
+.sidebar-nav li {
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    font-size: 14px;
+    color: #555;
+}
+.sidebar-nav li:hover {
+    color: #f5f5f5;
+}
+.page-post-detail .sidebar-nav-toc {
+    padding: 0 5px;
+}
+.page-post-detail .sidebar-nav-overview {
+    margin-left: 10px;
+}
+.sidebar-nav .sidebar-nav-active {
+    color: #87daff;
+    border-bottom-color: #87daff;
+}
+.sidebar-nav .sidebar-nav-active:hover {
+    color: #87daff;
+}
+.sidebar-panel {
+    display: none;
+}
+.sidebar-panel-active {
+    display: block;
+}
+
+/**************************************************/
+.post-toc-empty {
+    font-size: 14px;
+    color: #666;
+}
+.post-toc-wrap {
+    overflow: hidden;
+}
+.post-toc {
+    overflow: auto;
+}
+.post-toc ul {
+    margin: 0;
+    padding: 0 2px 5px 10px;
+    text-align: left;
+    list-style: none;
+    font-size: 14px;
+}
+.post-toc ul > ul {
+    padding-left: 0;
+}
+.post-toc ul a {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+    color: #999;
+    border-bottom-color: #555;
+}
+.post-toc ul a:hover {
+    color: #ccc;
+    border-bottom-color: #ccc;
+}
+.post-toc .nav-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.8;
+}
+.post-toc .nav .nav-child {
+    display: none;
+}
+.post-toc .nav .active > .nav-child {
+    display: block;
+}
+.post-toc .nav .active-current > .nav-child {
+    display: block;
+}
+.post-toc .nav .active-current > .nav-child > .nav-item {
+    display: block;
+}
+.post-toc .nav .active > a {
+    color: #87daff;
+    border-bottom-color: #87daff;
+}
+.post-toc .nav .active-current > a {
+    color: #87daff;
+}
+.post-toc .nav .active-current > a:hover {
+    color: #87daff;
+}
+
+.use-motion .motion-element {
+    opacity: 0;
+}
+.use-motion .menu-item {
+    opacity: 0;
+}
+.use-motion .brand {
+    opacity: 0;
+}
+.use-motion .post {
+    opacity: 0;
+}
+.use-motion .logo,
+.use-motion .site-title,
+.use-motion .site-subtitle {
+    opacity: 0;
+    position: relative;
+    top: -10px;
+}
+.use-motion .logo-line-before i {
+    left: -100%;
+}
+.use-motion .logo-line-after i {
+    right: -100%;
+}
+
+/************************/
+.fa .fa-moon-o {
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*********** ^解决回到顶部的箭头和目录因为刷新页面抖动的问题^ ****************/
+html {
+    overflow-y: scroll;
+}
+
+:root {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+:root body {
+    position: absolute;
+}
+
+body {
+    width: 100vw;
+    overflow: hidden;
+}
+/************ && ***************/

@@ -1,0 +1,8 @@
+  {{ $style := resources.Get "css/main.scss" | resources.ToCSS | resources.Minify}}
+  {{ $iconfont := resources.Get "font/iconfont.css" }}
+  {{ $searchStyle := resources.Get "css/search.css" }}
+  <link rel="stylesheet" href="{{ $iconfont.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $searchStyle.RelPermalink }}">
+  <link href="https://cdn.bootcss.com/font-awesome/5.8.1/css/all.min.css" rel="stylesheet">
+
