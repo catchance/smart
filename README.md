@@ -117,7 +117,7 @@ The following resources are included in the theme:
 
 * lazysizes - https://github.com/aFarkas/lazysizes
 * lightGallery - https://github.com/sachinchoolur/lightGallery
-* code-prettify - https://github.com/google/code-prettify
+* [google code prettify](https://github.com/google/code-prettify) 
 
 # Author
 [catchance](https://github.com/catchance)

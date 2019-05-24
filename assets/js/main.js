@@ -6,6 +6,7 @@ jQuery(function($) {
 
     _Blog.prettify = function() {
         $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+        $('pre').addClass('prettyprint linenums').attr('style', 'white-space: pre-wrap;');
         window.prettyPrint && prettyPrint();
     };
 
