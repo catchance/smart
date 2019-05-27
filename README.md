@@ -3,7 +3,7 @@ Smart Hugo Theme
 
 Smart is a clean, simple blog theme for Hugo. 
 
-![smart](https://github.com/catchance/smart/master/images/screenshot.gif)
+![smart](https://github.com/catchance/smart/blob/master/images/screenshot.gif)
 
 # Demo
 To see this theme in action,  Here is a live [demo site](https://xchance.xyz) which is rendered with this theme and some content for documentation and blog posts.
