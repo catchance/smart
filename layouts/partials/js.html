@@ -16,22 +16,24 @@
 {{ $search := resources.Get "js/search.js" }}
 <script src="{{ $search.Permalink }}"></script>
 
-{{ $bootstrap_m := resources.Get "js/bootstrap.js" }}
-<script src="{{ $bootstrap_m.Permalink }}"></script>
-
 {{ $velocity := resources.Get "js/velocity.min.js" }}
 <script src="{{ $velocity.Permalink }}"></script>
-
-{{ $toc := resources.Get "js/toc.js" }}
-<script src="{{ $toc.Permalink }}"></script>
-
-{{ $scrollspy := resources.Get "js/scrollspy.js" }}
-<script src="{{ $scrollspy.Permalink }}"></script>
 
 {{ $service_worker := resources.Get "service-worker.js" }}
 <script src="{{ $service_worker.Permalink }}"></script>
 
 {{ if .IsPage }}
+    {{ if .Params.toc }}
+        {{ $bootstrap_m := resources.Get "js/toc_button_init.js" }}
+        <script src="{{ $bootstrap_m.Permalink }}"></script>
+
+        {{ $toc := resources.Get "js/toc.js" }}
+        <script src="{{ $toc.Permalink }}"></script>
+
+        {{ $scrollspy := resources.Get "js/scrollspy.js" }}
+        <script src="{{ $scrollspy.Permalink }}"></script>
+    {{ end }}
+
     {{ $prettify := resources.Get "/js/prettify.min.js" }}
     <script src="{{ $prettify.Permalink }}"></script>
     {{ $dynamic := resources.Get "/js/dynamic.to.top.min.js" }}

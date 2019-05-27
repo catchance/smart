@@ -3,7 +3,7 @@
 
 name = "smart"
 license = "MIT"
-licenselink = "https://github.com/liuzc/LeaveIt/blob/master/LICENSE"
+licenselink = "https://github.com/catchance/smart/blob/master/LICENSE"
 description = "A smart blog theme for hugo."
 homepage = "https://xchance.xyz/"
 tags = [
