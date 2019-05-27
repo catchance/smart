@@ -70,13 +70,13 @@ If you want to show posts on index instead of a personal profile, just open conf
 ### Displaying Featured Image
 
 ```toml
----
-date: 2018-08-29
-title: "This One Goes to 11!"
-description: "With Go 1.11, Hugo finally gets support for variable overwrites in templates!"
-categories: ["Releases"]
-featured_image: https://raw.githubusercontent.com/gohugoio/hugoDocs/master/content/en/news/0.48-relnotes/featured-hugo-48-poster.png
----
++++
+date = 2019-05-04T15:17:02+08:00
+title = "This One Goes to 11!"
+description = "With Go 1.11, Hugo finally gets support for variable overwrites in templates!"
+categories = ["Releases"]
+featured_image = "https://raw.githubusercontent.com/gohugoio/hugoDocs/master/content/en/news/0.48-relnotes/featured-hugo-48-poster.png"
++++
 ```
 
 # Questions, ideas, bugs, pull requests?
