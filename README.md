@@ -15,9 +15,9 @@ To see this theme in action,  Here is a live [demo site](https://xchance.xyz) wh
 * Load images with Lazy Load By [lazysizes](https://github.com/aFarkas/lazysizes)
 * Automatically highlighting code By [Google code-prettify](https://github.com/google/code-prettify), Customizable styles via CSS. See the [themes gallery](https://rawgit.com/google/code-prettify/master/styles/index.html).
 * Automagical image gallery with [lightGallery](https://github.com/sachinchoolur/lightGallery)
-* serviceWorker
+* service-worker
 * lunr
-* canvas_nest
+* canvas-nest
 
 # Getting Started
 Clone this repository to your hugo theme directory.

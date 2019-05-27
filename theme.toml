@@ -8,20 +8,23 @@ description = "A smart blog theme for hugo."
 homepage = "https://xchance.xyz/"
 tags = [
   "blog",
+  "smart",
   "minimal",
   "clean",
   "responsive",
   "gallery",
-  "dark",
   "theme"
 ]
 features = [
   "cover-image",
-  "favicon",
   "multilingual",
   "pagination",
   "social-menu",
   "syntax-highlighting",
+  "service-worker",
+  "lunr",
+  "search",
+  "canvas-nest"
 ]
 
 min_version = "0.41"
