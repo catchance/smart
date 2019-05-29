@@ -18,6 +18,7 @@ To see this theme in action,  Here is a live [demo site](https://xchance.xyz) wh
 * service-worker
 * lunr
 * canvas-nest
+* table of contents
 
 # Getting Started
 Clone this repository to your hugo theme directory.
@@ -99,3 +100,6 @@ The following resources are included in the theme:
 * [Coder](https://themes.gohugo.io/hugo-coder/)
 * [hello-friend](https://themes.gohugo.io/hugo-theme-hello-friend/)
 * [LeaveIt](https://github.com/liuzc/LeaveIt)
+* [hello-friend-ng](https://themes.gohugo.io/hugo-theme-hello-friend-ng/)
+* [KeepIt](https://themes.gohugo.io/keepit/)
+* [Hugo Theme Introduction](https://themes.gohugo.io/hugo-theme-introduction/)
