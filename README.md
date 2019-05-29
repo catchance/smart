@@ -16,7 +16,7 @@ To see this theme in action,  Here is a live [demo site](https://xchance.xyz) wh
 * Automatically highlighting code By [Google code-prettify](https://github.com/google/code-prettify), Customizable styles via CSS. See the [themes gallery](https://rawgit.com/google/code-prettify/master/styles/index.html).
 * Automagical image gallery with [lightGallery](https://github.com/sachinchoolur/lightGallery)
 * service-worker
-* lunr
+* [lunr](https://github.com/olivernn/lunr.js) A bit like Solr, but much smaller and not as bright.
 * canvas-nest
 * table of contents
 
@@ -87,8 +87,8 @@ All feedback is welcome! Head over to the [issue tracker](https://github.com/cat
 Smart is licensed under the MIT license. Check the LICENSE file for details.
 The following resources are included in the theme:
 
-* lazysizes - https://github.com/aFarkas/lazysizes
-* lightGallery - https://github.com/sachinchoolur/lightGallery
+* [lazysizes](https://github.com/aFarkas/lazysizes)
+* [lightGallery](https://github.com/sachinchoolur/lightGallery)
 * [google code prettify](https://github.com/google/code-prettify) 
 
 # Author
